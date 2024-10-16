@@ -10,8 +10,9 @@ library(rvg)
 # Define a function to add a slide and populate the content
 add_Title_Text <- function(ppt, title, text1 = Sys.Date()) {
   
-  # Open the PowerPoint presentation
-  ppt <- read_pptx("C:\\Users\\DataIntern\\HQToronto\\Shared Docs - General\\Clinical Reporting\\ReportingProjects\\DataIntern\\PPTTemplates\\TemplateProject\\SH Board Meeting Slide Deck - Updated.pptx") 
+  
+# Open the PowerPoint presentation
+ppt <- read_pptx("C:\\Users\\DataIntern\\HQToronto\\Shared Docs - General\\Clinical Reporting\\ReportingProjects\\DataIntern\\PPTTemplates\\TemplateProject\\Template.pptx") 
   
   
   ppt %>%
@@ -21,7 +22,7 @@ add_Title_Text <- function(ppt, title, text1 = Sys.Date()) {
     
     
 # Save the updated PowerPoint
-print(ppt, target = "C:\\Users\\DataIntern\\HQToronto\\Shared Docs - General\\Clinical Reporting\\ReportingProjects\\DataIntern\\PPTTemplates\\TemplateProject\\SH Board Meeting Slide Deck - Updated.pptx") 
+print(ppt, target = "C:\\Users\\DataIntern\\HQToronto\\Shared Docs - General\\Clinical Reporting\\ReportingProjects\\DataIntern\\PPTTemplates\\TemplateProject\\HQ Master Style Slide.pptx") 
 
     
 }
@@ -29,5 +30,5 @@ print(ppt, target = "C:\\Users\\DataIntern\\HQToronto\\Shared Docs - General\\Cl
 # Example usage
 
 ppt <- add_Title_Text(ppt, 
-                      title = "Second test being done", 
+                      title = "The problem", 
                       text1 = "This is a second slide template")

@@ -5,7 +5,7 @@ library(rvg)
 
 library(magrittr)
 
-
+# layout = "Two text columns"
 # Template for title + text1 + text2 + date_label
 
 # Define a function to add a slide and populate the content
@@ -29,7 +29,7 @@ add_custom_slide <- function(ppt, title, text1, text2, date_label = Sys.Date()) 
 }
 
 # Example usage
-ppt <- read_pptx() # Assuming you have already created a PowerPoint object
+ppt <- read_pptx() # Reading the ppt that I want to add texts
 ppt <- add_custom_slide(ppt, 
                         title = "Sexual Health Key Messages", 
                         text1 = "Highest weekly average last week

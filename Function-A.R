@@ -6,6 +6,7 @@ library(rvg)
 library(magrittr)
 
 
+# layout = "Two text columns"
 # Template for title + text1 + text2 + date_label
 
 # Define a function to add a slide and populate the content
